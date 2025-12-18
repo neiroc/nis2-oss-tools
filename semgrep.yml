@@ -1,0 +1,19 @@
+rules:
+  - id: nodejs-no-eval
+    message: "Use of eval() can lead to Remote Code Execution"
+    severity: ERROR
+    languages: [javascript]
+    pattern: eval(...)
+    metadata:
+      category: security
+      cwe: "CWE-95"
+      owasp: "A03:2021-Injection"
+
+  - id: express-no-unsafe-deserialization
+    message: "Missing input validation on request body"
+    severity: WARNING
+    languages: [javascript]
+    pattern: req.body
+    metadata:
+      category: security
+      owasp: "A04:2021-Insecure Design"

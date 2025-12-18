@@ -1,0 +1,13 @@
+{
+  "name": "nis2-secure-node-app",
+  "version": "1.0.0",
+  "description": "Sample Node.js app for NIS2 security pipeline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
